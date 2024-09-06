@@ -16,7 +16,6 @@ class ConverterTest {
     }
 
     @Test
-
     void whenConvert180RblThen3Dollar() {
         float input = 180;
         float expected = 3;
