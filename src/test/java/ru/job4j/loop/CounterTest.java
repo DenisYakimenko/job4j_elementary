@@ -11,7 +11,6 @@ class CounterTest {
         int expected = 55;
         int output = Counter.sum(0, 10);
         assertThat(output).isEqualTo(expected);
-
     }
 
     @Test
@@ -19,7 +18,6 @@ class CounterTest {
         int expected = 33;
         int output = Counter.sum(3, 8);
         assertThat(output).isEqualTo(expected);
-
     }
 
     @Test
@@ -27,7 +25,6 @@ class CounterTest {
         int expected = 1;
         int output = Counter.sum(1, 1);
         assertThat(output).isEqualTo(expected);
-
     }
 
     @Test
@@ -35,6 +32,5 @@ class CounterTest {
         int expected = 0;
         int output = Counter.sum(9, 7);
         assertThat(output).isEqualTo(expected);
-
     }
 }
