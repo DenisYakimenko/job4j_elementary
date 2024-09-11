@@ -17,6 +17,5 @@ public class Fitness {
         int nikStrength = 120;
         int months = calc(ivanStrength, nikStrength);
         System.out.println("Ивану потребуется " + months + " месяцев, чтобы превзойти Николая по силе тяги.");
-
     }
 }
