@@ -10,10 +10,6 @@ public class PrimeNumber {
 
     public static boolean check(int number) {
         boolean isPrime = number > 1;
-        if (number <= 1) {
-            return false;
-        }
-
         for (int i = 2; i < number; i++) {
             if (number % i == 0) {
                 isPrime = false;
