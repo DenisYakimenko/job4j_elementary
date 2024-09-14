@@ -5,10 +5,8 @@ public class Savings {
         int years = 0;
         double total = 0;
         do {
+            total += total * (percent / 100);
             total += annualDeposit;
-            if (years > 0) {
-                total += total * (percent / 100);
-            }
             years++;
             System.out.println(total);
         } while (total < goal);
@@ -17,7 +15,7 @@ public class Savings {
 
     public static void main(String[] args) {
 
-        int years = years(1000, 200, 10);
+        int years = years(1000, 100, 20);
         System.out.println("Количество лет для накопления суммы: " + years);
     }
 }
