@@ -14,7 +14,6 @@ public class Savings {
     }
 
     public static void main(String[] args) {
-
         int years = years(1000, 100, 20);
         System.out.println("Количество лет для накопления суммы: " + years);
     }
