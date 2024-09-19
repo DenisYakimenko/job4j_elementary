@@ -28,5 +28,7 @@ public class SwitchArray {
         for (int value : array) {
             System.out.print(value + " ");
         }
+
     }
+
 }
