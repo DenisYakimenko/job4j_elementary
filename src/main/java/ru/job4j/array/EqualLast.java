@@ -9,6 +9,5 @@ public class EqualLast {
         int[] left = {1, 2, 3};
         int[] right = {5, 4, 3};
         System.out.println(check(left, right));
-
     }
 }
