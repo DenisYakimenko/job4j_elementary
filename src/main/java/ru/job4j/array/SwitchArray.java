@@ -25,7 +25,8 @@ public class SwitchArray {
         }
 
         System.out.println("Массив после замены: ");
-        for (int value : array) {
+        for (int i = 0; i < array.length; i++) {
+            int value = array[i];
             System.out.print(value + " ");
         }
 
