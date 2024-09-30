@@ -33,6 +33,19 @@ public class MatrixCheck {
         return result;
     }
 
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][i] == 'X') {
+                if (monoHorizontal(board, i) || monoVertical(board, i)) {
+                    result = true;
+                    break;
+                }
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         char[][] board = {
                 {' ', ' ', ' '},
@@ -50,20 +63,28 @@ public class MatrixCheck {
                 {' ', ' ', 'X'},
                 {' ', ' ', 'X'},
         };
-
         for (int index = 0; index < board2.length; index++) {
             boolean result = monoVertical(board2, index);
             System.out.println("Столб " + index + " заполнена 'X': " + result);
         }
         System.out.println();
-
         char[][] board3 = {
                 {'X', ' ', ' '},
                 {' ', 'Y', ' '},
                 {' ', ' ', 'Z'},
         };
-
         char[] result = extractDiagonal(board3);
         System.out.println("Диагональ " + Arrays.toString(result));
+        System.out.println();
+        char[][] input = {
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+        };
+            boolean result2 = isWin(input);
+            System.out.println("Выигрышная комбинация: " + result2);
+        }
     }
-}
+
