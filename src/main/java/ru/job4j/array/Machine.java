@@ -5,15 +5,13 @@ import java.util.Arrays;
 public class Machine {
     public static int[] change(int money, int price) {
         int[] coins = {10, 5, 2, 1};
-        int change = money - price;
         int[] result = new int[100];
         int size = 0;
 
-        for (int i = 0; i < coins.length; i++) {
-            int coin = coins[i];
-            while (change >= coin) {
+        for (int coin : coins) {
+            while (money - price >= coin) {
                 result[size++] = coin;
-                change -= coin;
+                money -= coin;
             }
         }
 
