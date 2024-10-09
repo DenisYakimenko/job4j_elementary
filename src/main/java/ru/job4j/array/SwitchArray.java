@@ -23,13 +23,10 @@ public class SwitchArray {
         for (int index = 0; index < result.length; index++) {
             System.out.println(result[index]);
         }
-
         System.out.println("Массив после замены: ");
         for (int i = 0; i < array.length; i++) {
             int value = array[i];
             System.out.print(value + " ");
         }
-
     }
-
 }

@@ -1,9 +1,7 @@
 package ru.job4j.loop;
 
 public class PrimeNumber {
-
     public static void main(String[] args) {
-
         System.out.println(check(5));
         System.out.println(check(4));
     }
@@ -15,11 +13,9 @@ public class PrimeNumber {
                 isPrime = false;
                 break;
             }
-
         }
         return isPrime;
     }
-
 }
 
 
