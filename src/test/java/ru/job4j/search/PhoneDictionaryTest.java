@@ -19,7 +19,7 @@ class PhoneDictionaryTest {
     }
 
     @Test
-    public void whenFindBySurname(){
+    public void whenFindBySurname() {
         PhoneDictionary phones = new PhoneDictionary();
         phones.add(
                 new Person("Pavel", "Sidorov", "534111", "Moscow")
